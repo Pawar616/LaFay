@@ -1,0 +1,192 @@
+
+        :root {
+            --primary: #D4AFB9;
+            --secondary: #D1CFE2;
+        }
+        
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f9fafb;
+        }
+        
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar.scrolled .nav-link,
+        .navbar.scrolled .navbar-brand,
+        .navbar.scrolled .bi {
+            color: #000 !important;
+        }
+        
+        .nav-link {
+            position: relative;
+            color: white !important;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .nav-link:hover {
+            color: inherit;
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #c99da8;
+            border-color: #c99da8;
+        }
+        
+        .divider {
+            height: 4px;
+            width: 80px;
+            background-color: var(--primary);
+            margin: 0 auto;
+        }
+        
+        .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--primary);
+        }
+        
+        .product-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gallery-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .founder-image {
+            width: 250px;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .modal-image {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Hero Carousel Styles */
+        .hero-carousel {
+            height: 100vh;
+        }
+        
+        .carousel-item {
+            height: 100vh;
+        }
+        
+        .carousel-image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
+            z-index: 10;
+        }
+        
+        .carousel-caption h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .carousel-caption p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        
+        /* Hide carousel controls and indicators */
+        .carousel-control-prev,
+        .carousel-control-next,
+        .carousel-indicators {
+            display: none;
+        }
+        
+        /* Prevent carousel from pausing on hover */
+        .carousel {
+            pointer-events: none;
+        }
+        
+        .carousel-inner {
+            pointer-events: auto;
+        }
+        
+        /* Logo styles */
+        .navbar-logo {
+            height: 100px;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-black {
+            display: none;
+        }
+        
+        .logo-transparent {
+            display: block;
+        }
+        
+        .navbar.scrolled .logo-black {
+            display: block;
+        }
+        
+        .navbar.scrolled .logo-transparent {
+            display: none;
+        }
+    

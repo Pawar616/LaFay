@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fay - Handcrafted Candles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <img src="./images/LFL_Logo_Black.png" alt="La Fay Logo" class="navbar-logo logo-transparent">
+                <img src="./images/LFL_Logo_Transparent_Black.png" alt="La Fay Logo" class="navbar-logo logo-black">
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <i class="bi bi-list text-white"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#products">Shop</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#story">Our Story</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#founders">Founders</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Carousel - Using Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/img2.jpg" class="carousel-image" alt="Candle 1">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-center">
+                    <h1>La Fay Candles</h1>
+                    <p>Hand-poured with love, scented with magic</p>
+                    <a href="#products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/img5.jpg" class="carousel-image" alt="Candle 2">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-center">
+                    <h1>La Fay Candles</h1>
+                    <p>Hand-poured with love, scented with magic</p>
+                    <a href="#products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/img6.jpg" class="carousel-image" alt="Candle 3">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-center">
+                    <h1>La Fay Candles</h1>
+                    <p>Hand-poured with love, scented with magic</p>
+                    <a href="#products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/img3.jpg" class="carousel-image" alt="Candle 4">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption text-center">
+                    <h1>La Fay Candles</h1>
+                    <p>Hand-poured with love, scented with magic</p>
+                    <a href="#products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Story -->
+    <section class="py-5 bg-white" id="story">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4 text-dark">Our Story</h2>
+                    <div class="divider mb-5"></div>
+                    <p class="fs-5 text-secondary lh-lg">
+                        La Fay began as a small passion project in a cozy Parisian apartment. Our founder, a perfumer's daughter, combined her love for fragrances with the art of candle making. Each candle is crafted with ethically-sourced ingredients and designed to transform your space into a sanctuary of scent and light.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center text-dark">Our Collection</h2>
+            <div class="divider mb-5"></div>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img1.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Lavender Dreams</h3>
+                            <p class="card-text text-secondary mb-3">Calming lavender fields</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs280</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img2.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Vanilla Sky</h3>
+                            <p class="card-text text-secondary mb-3">Creamy vanilla bliss</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs320</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img3.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Citrus Bloom</h3>
+                            <p class="card-text text-secondary mb-3">Fresh citrus awakening</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs260</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img4.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Sandalwood Serenity</h3>
+                            <p class="card-text text-secondary mb-3">Woody earthy tones</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs340</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="4">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img5.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Rose Petal</h3>
+                            <p class="card-text text-secondary mb-3">Romantic floral bouquet</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs300</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="5">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card card h-100 border-0 shadow-sm">
+                        <div class="product-image" style="background-image: url('./images/img6.jpg')"></div>
+                        <div class="card-body p-4">
+                            <h3 class="card-title h5 fw-bold mb-2">Ocean Breeze</h3>
+                            <p class="card-text text-secondary mb-3">Fresh coastal air</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold">Rs280</span>
+                                <button class="btn btn-primary view-details rounded-pill" data-id="6">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center text-dark">A Moment of Light</h2>
+            <div class="divider mb-5"></div>
+            
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img1.jpg')"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img2.jpg')"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img3.jpg')"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img4.jpg')"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img5.jpg')"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-image rounded-3" style="background-image: url('./images/img6.jpg')"></div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <p class="fs-4 fst-italic text-secondary">
+                    "Light a candle every day, even when there's no reason to. Just for you. Just because you can."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="py-5 bg-light" id="founders">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center text-dark">Meet The Founders</h2>
+            <div class="divider mb-5"></div>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <div class="founder-image rounded-circle mx-auto mb-4" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+                    <h3 class="h3 fw-bold mb-2">Varsha Kandala</h3>
+                    <p class="text-primary mb-3">Founder & Master Perfumer</p>
+                    <p class="text-secondary">
+                        Isabelle grew up in Grasse, France, the perfume capital of the world. After years in the fragrance industry, she wanted to create something more personal and intimate - thus La Fay was born.
+                    </p>
+                </div>
+                
+                <div class="col-md-6 text-center">
+                    <div class="founder-image rounded-circle mx-auto mb-4" style="background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+                    <h3 class="h3 fw-bold mb-2">Akshita Kolhekar</h3>
+                    <p class="text-primary mb-3">Co-Founder & Creative Director</p>
+                    <p class="text-secondary">
+                        Claire's background in design and branding brings the visual magic to La Fay. She ensures every candle is not just a scent experience but a beautiful object that enhances your space.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center text-dark">Get In Touch</h2>
+            <div class="divider mb-5"></div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="h4 fw-bold mb-3">Visit Our Shop</h3>
+                    <p class="text-secondary mb-4">123 abc place <br>75001 Secundeabad, India</p>
+                    
+                    <h3 class="h4 fw-bold mb-3 mt-4">Contact Info</h3>
+                    <p class="text-secondary mb-2"><i class="bi bi-telephone me-2"></i> +91 1 23 45 67 89</p>
+                    <p class="text-secondary"><i class="bi bi-envelope me-2"></i> welcome@lafay.com</p>
+                    
+                    <h3 class="h4 fw-bold mb-3 mt-4">Hours</h3>
+                    <p class="text-secondary">Monday - Friday: 10am - 7pm<br>Saturday: 11am - 5pm<br>Sunday: Closed</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5 fw-bold mb-3">La Fay</h3>
+                    <p class="text-secondary mb-3">Handcrafted candles made with love and the finest ingredients.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="footer-link"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5 fw-bold mb-3">Quick Links</h3>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#products" class="footer-link">Shop</a>
+                        <a href="#story" class="footer-link">Our Story</a>
+                        <a href="#founders" class="footer-link">Founders</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                        <a href="#" class="footer-link">Returns</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <h3 class="h5 fw-bold mb-3">Newsletter</h3>
+                    <p class="text-secondary mb-3">Subscribe for updates and special offers.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-0 rounded-start" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary rounded-0 rounded-end">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4 mt-4 border-top border-secondary">
+                <p class="text-secondary mb-0">&copy; <span id="currentYear"></span> La Fay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="modal-image rounded-3" id="modalImage"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 id="modalTitle" class="h3 fw-bold mb-2"></h2>
+                            <p id="modalSubtitle" class="text-secondary mb-3"></p>
+                            <p id="modalPrice" class="h4 fw-bold mb-4"></p>
+                            <p id="modalDescription" class="text-secondary mb-4"></p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center border rounded-pill">
+                                    <button class="btn px-3 py-1 fs-5">-</button>
+                                    <span class="px-3">1</span>
+                                    <button class="btn px-3 py-1 fs-5">+</button>
+                                </div>
+                                <button class="btn btn-primary rounded-pill px-4">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
