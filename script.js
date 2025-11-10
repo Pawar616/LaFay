@@ -1,4 +1,4 @@
- // Product data
+// Product data
         const products = [
             {
                 id: 1,
@@ -52,6 +52,34 @@
 
         // Set current year in footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Logo Video Intro Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoIntro = document.getElementById('logoIntro');
+            const logoVideo = document.getElementById('logoVideo');
+            const skipIntro = document.getElementById('skipIntro');
+            const mainContent = document.getElementById('mainContent');
+            
+            // Function to show main content and hide intro
+            function showMainContent() {
+                logoIntro.style.display = 'none';
+                mainContent.style.display = 'block';
+                document.body.style.overflow = 'auto';
+            }
+            
+            // When video ends, show main content
+            logoVideo.addEventListener('ended', showMainContent);
+            
+            // Skip intro button
+            skipIntro.addEventListener('click', showMainContent);
+            
+            // If video fails to load, show main content after 3 seconds
+            setTimeout(() => {
+                if (logoIntro.style.display !== 'none') {
+                    showMainContent();
+                }
+            }, 3000);
+        });
 
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
